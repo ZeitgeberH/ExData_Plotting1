@@ -40,7 +40,9 @@ legend("topright",names(Data)[7:9],lwd=2,box.lwd = 0,bty="n",col=c("black","red"
 plot(x,Data[,5],col="white",main="",xlab="datetime",ylab="Voltage")
 lines(x,Data[,5],col="black")
 
-plot(x,Data[,4],col="white",main="",xlab="datetime",ylab=names(data)[4])
+theName=names(Data)
+
+plot(x,Data[,4],col="white",main="",xlab="datetime",ylab=names(Data)[4])
 lines(x,Data[,4],col="black")
 dev.off()
 
